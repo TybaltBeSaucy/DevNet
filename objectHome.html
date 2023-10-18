@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+    </head>
+    <body>
+        <h1 id="pc_info">No Output</h1>
+        <button onclick="createDisplay()">Display</button>
+
+        <script>class PC {
+
+            constructor(cpu, gpu, motherboard, ram, ram_cap, storage_cap) {
+                this.cpu  = cpu;
+                this.gpu = gpu;
+                this.motherboard = motherboard;
+                this.ram = ram;
+                this.ram_cap = ram_cap;
+                this.storage_cap = storage_cap;
+            };
+        
+        }
+        
+        function getCPU(arg) {
+            return arg.cpu;
+        }
+        
+        function setCPU(target, cpu) {
+            target.cpu = cpu;
+        }
+        
+        function getGPU(arg) {
+            return arg.gpu;
+          }
+          
+        function setGPU(target, gpu) {
+            target.gpu = gpu;
+        }
+        
+        function getMotherboard(arg) {
+            return arg.motherboard;
+        }
+        
+        function setMotherboard(target, motherboard) {
+            target.motherboard = motherboard;
+        }
+        
+        function getRam(arg) {
+            return arg.ram;
+        }
+        
+        function setRam(target, ram) {
+            target.ram = ram;
+        }
+        
+        function getRamCap(arg) {
+            return arg.ram_cap;
+        }
+        
+        function setRamCap(target, ram_cap) {
+            target.ram_cap = ram_cap;
+        }
+        
+        function getStorageCap(arg) {
+            return arg.storage_cap;
+        }
+        
+        function setStorageCap(target, storage_cap) {
+            target.storage_cap = storage_cap;
+        }
+        
+        function createDisplay() {
+            var display = "CPU: " + getCPU(pc_1) + "<br>GPU: " + getGPU(pc_1) + "<br>Motherboard: " + getMotherboard(pc_1) + "<br>Ram: " + getRam(pc_1) +  + "<br>Ram Capacity: " + getRamCap(pc_1) + "<br>Storage Capacity: " + getStorageCap(pc_1);
+            document.getElementById("pc_info").innerHTML = display;
+        }
+        
+        pc_1 = new PC("Intel i7-11700k", "NVIDIA GeForce RTX 3070", "Gigabyte Z590 AORUS PRO AX", "TEAMGROUP 3200 DDR4", "32gb", "Samsung 870 Pro 1tb SSD");
+        </script>
+    </body>
+</html>
