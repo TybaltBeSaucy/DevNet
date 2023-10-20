@@ -39,17 +39,16 @@ body {
     padding: 60px;
     height: 400px;
     text-align: center;
-    background: #1abc9c;
+    color: #000;
+    background: #cdff38;
     z-index: -1;
 }
 
 .banner h1 {
+    font-size: 100px;
     position: absolute;
-    top: 450px;
-    left: 0;
-    display: flex;
-    color: white;
-    z-index: 1;
+    top: 25%;
+    left: 20%;
 }
 
 .hero-bg {
@@ -91,7 +90,8 @@ body {
     color: #fff;
 }
 
-nav, .home {
+nav,
+.home {
     max-width: 1200px;
     margin: auto;
     padding: 2rem 1rem;
@@ -128,6 +128,16 @@ nav, .home {
     position: relative;
     padding-bottom: 0.75rem;
     color: #000;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.link a:hover {
+    color: black !important;
+}
+
+.home .link a:hover {
+    color: white !important;
 }
 
 .home .link a::after {
@@ -266,4 +276,60 @@ header .content h4 {
 
 .card:hover img {
     filter: brightness(0.7);
+}
+
+.forum-container {
+    display: flex;
+}
+
+.table {
+    margin: 20px;
+    width: 60% !important;
+}
+
+.forum-filters {
+    width: 35%;
+    display: flex;
+    border: 1px solid #000;
+}
+
+.inline-flex {
+    display:inline-flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.whitespace-nowrap {
+    white-space: nowrap;
+}
+
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.leading-6 {
+    line-height: 1.5rem;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.no-text-decoration {
+    text-decoration: none;
+}
+
+.bg-filter {
+    text-align: center;
+    background-color: #cdff38;
+    color: #000 !important;
+    height: 30px;
+    width: 50px;
 }
